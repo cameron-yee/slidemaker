@@ -97,9 +97,11 @@ def create_ppt(song, groupOfLyrics):
 	
 
 	
-if __name__ == "__main__":
+if __name__ == "__main__": 
+	song = raw_input("Song Name: ")
+	artist = raw_input("Artist Name: ")
 	#output = PyLyrics.getLyrics("Rend Collective", "Build Your Kingdom Here")
-	 groupOfLyrics = groupLyrics("Jesus Culture", "Holy Spirit")
-	 create_ppt("Holy Spirit", groupOfLyrics)
-	 response = requests.get("")
+	groupOfLyrics = groupLyrics(artist, song)
+	create_ppt(song, groupOfLyrics)
+	response = requests.get("")
 	#print (output)
